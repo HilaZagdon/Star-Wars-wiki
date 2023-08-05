@@ -1,0 +1,75 @@
+.mainM {
+  grid-area: mainM;
+  background-image: url(pictures/movies\ background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+}
+
+.containersM {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-areas:
+    "headr headr headr headr"
+    "mainM mainM mainM mainM"
+    "mainM mainM mainM mainM"
+    "mainM mainM mainM mainM"
+    "mainM mainM mainM mainM"
+    "mainM mainM mainM mainM"
+    "mainM mainM mainM mainM"
+    "mainM mainM mainM mainM"
+    "mainM mainM mainM mainM"
+    "footr footr footr footr";
+}
+
+.main-movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 7vw;
+  width: 90vw;
+}
+
+.movies-images {
+  flex-wrap: wrap;
+  width: 25%;
+  display: flex;
+  margin-bottom: 10vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.under-movie-text {
+  padding: 5px;
+  background-color: rgba(240, 248, 255, 0.634);
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  width: 266.5px;
+  height: 8vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+
+#moviestitle {
+  font-family: Georgia, serif, sans-serif;
+  font-size: 8vh;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 10px 10px 5px rgb(65, 59, 59);
+  margin-bottom: 3vh;
+}
+
+.movie-card {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(255, 255, 255);
+}

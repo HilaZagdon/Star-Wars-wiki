@@ -1,0 +1,61 @@
+.container-home {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.starwars-intro {
+  margin: 5vh 5vw;
+  padding: 2vh 2vw;
+  background-color: rgba(240, 248, 255, 0.547);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.headline-intro {
+  font-size: 8vh;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: Georgia, serif, sans-serif;
+  text-shadow: 10px 10px 5px rgb(32, 30, 30);
+}
+
+.starwars-intro-title {
+  font-size: 4vh;
+  font-weight: 700;
+}
+
+.container-image-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 6vw;
+  margin-left: 5vw;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+}
+
+.the-image {
+  margin-left: 5vw;
+  margin-right: 17.5vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.the-text {
+  color: #000000;
+  background-color: rgba(240, 248, 255, 0.547);
+  padding: 5vh 4vw;
+  border-radius: 5px;
+  margin-left: -6.2vw;
+  margin-right: -1vw;
+  backdrop-filter: blur(5px);
+}
+
+.main {
+  grid-area: main;
+  background-image: url(pictures/star\ wars\ background\ main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}

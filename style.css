@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.containers {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-areas:
+    "headr headr headr headr"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footr footr footr footr";
+}
+
+.headr {
+  grid-area: headr;
+}
+
+.main {
+  grid-area: main;
+  overflow: auto;
+}
+
+.navbar {
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(158, 202, 207),
+    rgb(137, 158, 207),
+    rgb(104, 176, 200)
+  );
+}
+
+.footr {
+  background-image: linear-gradient(
+    to right,
+    rgb(158, 202, 207),
+    rgb(137, 158, 207),
+    rgb(104, 176, 200)
+  );
+  grid-area: footr;
+  font-weight: 700;
+}
+
+.footer-container {
+  display: flex;
+  margin-top: 1vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a:hover {
+  text-decoration: none;
+}
