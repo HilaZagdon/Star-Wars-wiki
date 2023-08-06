@@ -60,3 +60,33 @@ body {
   border-bottom-right-radius: 10px;
   box-shadow: 5px 5px 5px rgb(255, 255, 255);
 }
+
+.videos-title {
+  font-family: Georgia, serif, sans-serif;
+  font-size: 8vh;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 10px 10px 5px rgb(242, 232, 232);
+  color: rgb(65, 59, 59);
+}
+
+@media screen and (max-width: 600px) {
+  .container-videos {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
+
+  .trailers {
+    width: 20em;
+    margin-left: 5vw;
+  }
+
+  .videos-title {
+    font-size: 5vh;
+  }
+
+  #navbarNav {
+    flex-direction: column;
+  }
+}

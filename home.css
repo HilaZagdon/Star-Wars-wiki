@@ -1,14 +1,20 @@
+body {
+  --lightblue: #00f0ff;
+}
+
 .container-home {
   display: flex;
   justify-content: space-evenly;
 }
 
 .starwars-intro {
+  border: 5px solid var(--lightblue);
+  box-shadow: 0 0 15px var(--lightblue), inset 0 0 15px var(--lightblue);
   margin: 5vh 5vw;
   padding: 2vh 2vw;
   background-color: rgba(240, 248, 255, 0.547);
   backdrop-filter: blur(5px);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .headline-intro {
@@ -43,6 +49,8 @@
 }
 
 .the-text {
+  border: 5px solid var(--lightblue);
+  box-shadow: 0 0 15px var(--lightblue), inset 0 0 15px var(--lightblue);
   color: #000000;
   background-color: rgba(240, 248, 255, 0.547);
   padding: 5vh 4vw;

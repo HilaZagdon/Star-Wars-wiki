@@ -1,0 +1,56 @@
+.mainA {
+  grid-area: mainA;
+  background-image: url(pictures/about\ us\ background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+}
+
+.containersA {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-areas:
+    "headr headr headr headr"
+    "mainA mainA mainA mainA"
+    "mainA mainA mainA mainA"
+    "mainA mainA mainA mainA"
+    "mainA mainA mainA mainA"
+    "mainA mainA mainA mainA"
+    "mainA mainA mainA mainA"
+    "mainA mainA mainA mainA"
+    "mainA mainA mainA mainA"
+    "footr footr footr footr";
+}
+
+.container-aboutus {
+  border-left: 5px solid var(--lightblue);
+  border-right: 5px solid var(--lightblue);
+  box-shadow: 0 0 15px var(--lightblue), inset 0 0 15px var(--lightblue);
+  display: flex;
+  flex-direction: column;
+  width: 48vw;
+  margin-left: 3vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  color: #ffffff;
+}
+
+.about-us-title {
+  font-size: 8vh;
+  font-weight: 700;
+  text-shadow: 10px 10px 5px rgb(65, 59, 59);
+  font-family: Georgia, serif, sans-serif;
+  margin-bottom: 1.5vh;
+}
+
+.the-notes-below {
+  text-align: center;
+  font-size: 2vh;
+}
