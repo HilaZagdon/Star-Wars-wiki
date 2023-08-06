@@ -17,7 +17,7 @@ body {
   border-radius: 10px;
 }
 
-.headline-intro {
+.Opening {
   font-size: 8vh;
   text-align: center;
   font-weight: 700;
@@ -66,4 +66,49 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   overflow: auto;
+}
+
+.Opening,
+#newz::after {
+  animation-delay: 1s;
+  animation-delay: var(--animation-delay, 2s);
+  animation-iteration-count: 1;
+  animation-iteration-count: var(--iterations, 1);
+  animation-duration: 3s;
+  animation-duration: var(--duration, 1s);
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.Opening {
+  position: relative;
+  animation-name: text;
+  color: #fff;
+  white-space: nowrap;
+  cursor: default;
+}
+
+:root {
+  --animation-delay: 0;
+  --duration: 3s;
+  --iterations: 1;
+}
+
+.Opening::after {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
 }
